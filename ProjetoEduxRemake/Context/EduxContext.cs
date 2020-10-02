@@ -31,7 +31,7 @@ namespace ProjetoEduxRemake.Context
             base.OnConfiguring(optionsBuilder);
         }
 
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Curtida>()
             .HasOne(b => b.Usuario)
@@ -39,7 +39,7 @@ namespace ProjetoEduxRemake.Context
             .OnDelete(DeleteBehavior.NoAction);
 
             base.OnModelCreating(modelBuilder);
-        }*/
+        }
 
 
 

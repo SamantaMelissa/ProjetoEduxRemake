@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dry37yUqGS8age2e/JqFKp0yWg1pTepi10zD/j4BapxfdBmd8wStMkENqJnVHS0WC5xZHpAmwYe6GGbXE/+JPg==",
+  "dgSpecHash": "DBMaehm4SQarDk2h2YmNIxB10SbxEasssW4Tv9fHbgTEnfFhdFEMWMP/osZ8zDcK+DHSVXTyxN/zMhfUEMWXmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\parra\\OneDrive\\Documentos\\NewEdux\\ProjetoEduxRemake\\ProjetoEduxRemake.csproj",
+  "projectFilePath": "C:\\Users\\parra\\OneDrive\\Documentos\\ProjetoSenai\\ProjetoEduxRemake\\ProjetoEduxRemake\\ProjetoEduxRemake.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\parra\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.8\\microsoft.aspnetcore.authentication.jwtbearer.3.1.8.nupkg.sha512",
     "C:\\Users\\parra\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
