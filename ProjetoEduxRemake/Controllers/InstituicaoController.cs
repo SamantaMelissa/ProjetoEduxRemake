@@ -22,6 +22,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET: api/<InstituicaoController>
+        /// <summary>
+        /// Mostra todas as Instituições
+        /// </summary>
+        /// <returns>Retorna uma ista de Instituições</returns>
         [HttpGet]
         public List<Instituicao> Get()
         {
@@ -29,6 +33,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET api/<InstituicaoController>/5
+        /// <summary>
+        /// Mostra uma instituição específica
+        /// </summary>
+        /// <param name="id">Id de uma instituição</param>
+        /// <returns>Retorna uma instituição específica</returns>
         [HttpGet("{id}")]
         public Instituicao Get(Guid id)
         {
@@ -36,6 +45,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // POST api/<InstituicaoController>
+        /// <summary>
+        /// Adiciona uma nova instituição
+        /// </summary>
+        /// <param name="id">Id de uma instituição</param>
+        /// <param name="instituicao">Objeto Instituição</param>
         [HttpPost]
         public void Post([FromForm] Guid id, Instituicao instituicao)
         {
@@ -43,6 +57,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // PUT api/<InstituicaoController>/5
+        /// <summary>
+        /// edita uma instituição ja existente
+        /// </summary>
+        /// <param name="id">Id de uma instituição</param>
+        /// <param name="instituicao">Objeto Instituição</param>
         [HttpPut("{id}")]
         public void Put(Guid id, Instituicao instituicao)
         {
@@ -51,6 +70,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // DELETE api/<InstituicaoController>/5
+        /// <summary>
+        /// Remove uma instituição existente
+        /// </summary>
+        /// <param name="id">Id de uma Instituição</param>
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

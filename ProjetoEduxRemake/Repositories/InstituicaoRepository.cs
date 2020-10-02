@@ -18,9 +18,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Cadastra um novo usuario
+        /// Cadastra uma nova instituicao
         /// </summary>
-        /// <param name="usuario">Objeto a ser cadastrado</param>
+        /// <param name="instituicao">Objeto a ser cadastrado</param>
         public void Adicionar(Instituicao instituicao)
         {
             try
@@ -38,9 +38,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Busca um usuario pelo id
+        /// Busca uma instituicao pelo id
         /// </summary>
-        /// <param name="id">Id de usuario</param>
+        /// <param name="id">Id de instituicao</param>
         /// <returns>O usuario procurado</returns>
         public Instituicao BuscarPorId(Guid id)
         {
@@ -55,9 +55,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Altera um usuario
+        /// Altera uma instituicao
         /// </summary>
-        /// <param name="usuario">Objeto a ser alterado</param>
+        /// <param name="instituicao">Objeto a ser alterado</param>
         public void Editar(Instituicao instituicao)
         {
             try
@@ -89,9 +89,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Mostra todos os usuarios cadastrados
+        /// Mostra todos as instituicoes cadastradas
         /// </summary>
-        /// <returns>Uma lista de usuarios</returns>
+        /// <returns>Uma lista de instituicoes</returns>
         public List<Instituicao> Listar()
         {
             try
@@ -106,9 +106,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Remove um usuario
+        /// Remove uma instituicao
         /// </summary>
-        /// <param name="id">Objeto de usuario</param>
+        /// <param name="id">Objeto de instituicao</param>
         public void Remover(Guid id)
         {
             try

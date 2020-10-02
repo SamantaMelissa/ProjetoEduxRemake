@@ -22,6 +22,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET: api/<DicaController>
+        /// <summary>
+        /// Mostra todas as curtidas existentes
+        /// </summary>
+        /// <returns>Retorna uma lista de curtidas</returns>
         [HttpGet]
         public List<Curtida> Get()
         {
@@ -29,6 +33,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET api/<DicaController>/5
+        /// <summary>
+        /// Mostra uma curtida especifica
+        /// </summary>
+        /// <param name="id">Id de uma curtida</param>
+        /// <returns>Retorna uma curtida específica</returns>
         [HttpGet("{id}")]
         public Curtida Get(Guid id)
         {
@@ -36,6 +45,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // POST api/<DicaController>
+        /// <summary>
+        /// Adiciona uma nova curtida
+        /// </summary>
+        /// <param name="id">Id de uma curtida</param>
+        /// <param name="curtida">Uma curtida</param>
         [HttpPost]
         public void Post([FromForm] Guid id, Curtida curtida)
         {
@@ -43,6 +57,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // PUT api/<DicaController>/5
+        /// <summary>
+        /// Edita uma curtida existente
+        /// </summary>
+        /// <param name="id">Id de uma curtida</param>
+        /// <param name="curtida">Uma curtida</param>
         [HttpPut("{id}")]
         public void Put(Guid id, Curtida curtida)
         {
@@ -51,6 +70,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // DELETE api/<DicaController>/5
+        /// <summary>
+        /// Remove uma curtida existente
+        /// </summary>
+        /// <param name="id">Id de uma curtida</param>
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

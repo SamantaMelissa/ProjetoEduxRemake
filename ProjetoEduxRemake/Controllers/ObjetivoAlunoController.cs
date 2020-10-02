@@ -22,6 +22,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET: api/<ObjetivoAlunoController>
+        /// <summary>
+        /// Mostra todos os objetivos dos alunos
+        /// </summary>
+        /// <returns>Retorna uma lista de ObjetivoAluno</returns>
         [HttpGet]
         public List<ObjetivoAluno> Get()
         {
@@ -29,6 +33,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET api/<ObjetivoAlunoController>/5
+        /// <summary>
+        /// Mostra um ObjetivoAluno especifico
+        /// </summary>
+        /// <param name="id">Id do ObjetivoAluno</param>
+        /// <returns>Retorna um ObjetivoAluno específico</returns>
         [HttpGet("{id}")]
         public ObjetivoAluno Get(Guid id)
         {
@@ -36,6 +45,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // POST api/<ObjetivoAlunoController>
+        /// <summary>
+        /// Adiciona um novo ObjetivoAluno
+        /// </summary>
+        /// <param name="id">ID de ObjetivoAluno</param>
+        /// <param name="objetivoAluno">Objeto ObjetivoAluno</param>
         [HttpPost]
         public void Post([FromForm] Guid id, ObjetivoAluno objetivoAluno)
         {
@@ -43,6 +57,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // PUT api/<ObjetivoAlunoController>/5
+        /// <summary>
+        /// Edita um ObjetivoAluno ja existente
+        /// </summary>
+        /// <param name="id">Id de ObjetivoAluno</param>
+        /// <param name="objetivoAluno">Objeto ObjetivoALuno</param>
         [HttpPut("{id}")]
         public void Put(Guid id, ObjetivoAluno objetivoAluno)
         {
@@ -51,6 +70,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // DELETE api/<ObjetivoAlunoController>/5
+        /// <summary>
+        /// Remove um ObjetivoAluno
+        /// </summary>
+        /// <param name="id">Id de um ObjetivoAluno</param>
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

@@ -23,6 +23,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET: api/<UsuarioController>
+        /// <summary>
+        /// Mostra todos os usuários existentes
+        /// </summary>
+        /// <returns>Retorna uma lista de usuários</returns>
         [HttpGet]
         public List<Usuario> Get()
         {
@@ -31,6 +35,12 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET api/<UsuarioController>/5
+        /// <summary>
+        /// Retorna um usuário especificado pelo id
+        /// </summary>
+        /// <param name="id">Id de um usuário</param>
+        /// <param name="usuario">Objeto usuário</param>
+        /// <returns>Umusuário específico</returns>
         [HttpGet("{id}")]
         public Usuario Get(Guid id, Usuario usuario)
         {
@@ -38,6 +48,12 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // POST api/<UsuarioController>
+        /// <summary>
+        /// Adiciona um novo usuário
+        /// </summary>
+        /// <param name="id">Id de um usuário</param>
+        /// <param name="usuario">Objeto usuário</param>
+        /// <returns>Retorna um usário cadastrado</returns>
         [HttpPost]
         public IActionResult Post([FromForm] Guid id, Usuario usuario)
         {
@@ -58,6 +74,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // PUT api/<UsuarioController>/5
+        /// <summary>
+        /// Edita um usuário existente
+        /// </summary>
+        /// <param name="id">Id de um usuário</param>
+        /// <param name="usuario">Objeto usuário</param>
         [HttpPut("{id}")]
         public void Put( Guid id, Usuario usuario)
         {
@@ -66,6 +87,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // DELETE api/<UsuarioController>/5
+        /// <summary>
+        /// Remove um usuário existente
+        /// </summary>
+        /// <param name="id">Id de um usuário</param>
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

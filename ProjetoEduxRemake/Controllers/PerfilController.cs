@@ -22,6 +22,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET: api/<PerfilController>
+        /// <summary>
+        /// Lista Todos Os perfis
+        /// </summary>
+        /// <returns>Retorna lista de perfis</returns>
         [HttpGet]
         public List<Perfil> Get()
         {
@@ -29,6 +33,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET api/<PerfiloController>/5
+        /// <summary>
+        /// Busca um Perfil por seu id
+        /// </summary>
+        /// <param name="id">Id do Perfil</param>
+        /// <returns>Uma busca pelo id do perfil</returns>
         [HttpGet("{id}")]
         public Perfil Get(Guid id)
         {
@@ -36,6 +45,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // POST api/<PerfilController>
+        /// <summary>
+        /// Adiciona um novo perfil 
+        /// </summary>
+        /// <param name="id">id do perfil</param>
+        /// <param name="perfil">objeto perfil</param>
         [HttpPost]
         public void Post([FromForm] Guid id, Perfil perfil)
         {
@@ -43,6 +57,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // PUT api/<PerfilController>/5
+        /// <summary>
+        /// Edita um perfil existente
+        /// </summary>
+        /// <param name="id">id do Perfil</param>
+        /// <param name="perfil">Objeto Perfil</param>
         [HttpPut("{id}")]
         public void Put(Guid id, Perfil perfil)
         {
@@ -51,6 +70,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // DELETE api/<PerfilController>/5
+        /// <summary>
+        /// Exclui um Perfil
+        /// </summary>
+        /// <param name="id">id do Perfil</param>
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

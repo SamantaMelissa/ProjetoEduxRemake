@@ -18,9 +18,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Cadastra um novo usuario
+        /// Cadastra um novo objetivo
         /// </summary>
-        /// <param name="usuario">Objeto a ser cadastrado</param>
+        /// <param name="objetivoAluno">Objeto a ser cadastrado</param>
         public void Adicionar(ObjetivoAluno objetivoAluno)
         {
             try
@@ -39,10 +39,10 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Busca um usuario pelo id
+        /// Busca um objetivo pelo id
         /// </summary>
-        /// <param name="id">Id de usuario</param>
-        /// <returns>O usuario procurado</returns>
+        /// <param name="id">Id de objetivo</param>
+        /// <returns>O objetivo procurado</returns>
         public ObjetivoAluno BuscarPorId(Guid id)
         {
             try
@@ -56,9 +56,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Altera um usuario
+        /// Altera um objetivo
         /// </summary>
-        /// <param name="usuario">Objeto a ser alterado</param>
+        /// <param name="objetivoAluno">Objeto a ser alterado</param>
         public void Editar(ObjetivoAluno objetivoAluno)
         {
             try
@@ -83,9 +83,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Mostra todos os usuarios cadastrados
+        /// Mostra todos os objetivos cadastrados
         /// </summary>
-        /// <returns>Uma lista de usuarios</returns>
+        /// <returns>Uma lista de objetivos</returns>
         public List<ObjetivoAluno> Listar()
         {
             try
@@ -101,9 +101,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Remove um usuario
+        /// Remove um objetivo
         /// </summary>
-        /// <param name="id">Objeto de usuario</param>
+        /// <param name="id">Objeto de objetivo</param>
         public void Remover(Guid id)
         {
             try

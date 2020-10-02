@@ -22,6 +22,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET: api/<CategoriaController>
+        /// <summary>
+        /// Mostra todas as categorias existentes
+        /// </summary>
+        /// <returns>Uma lista de categoria</returns>
         [HttpGet]
         public List<Categoria> Get()
         {
@@ -29,6 +33,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET api/<CategoriaController>/5
+        /// <summary>
+        /// Retorna um categoria específica pelo seu Id
+        /// </summary>
+        /// <param name="id">Id de categoria</param>
+        /// <returns>Uma categoria específica</returns>
         [HttpGet("{id}")]
         public Categoria Get(Guid id)
         {
@@ -36,6 +45,12 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // POST api/<CategoriaAlunoController>
+        /// <summary>
+        /// Adiciona uma nova categoria
+        /// </summary>
+        /// <param name="id">id de uma categoria</param>
+        /// <param name="categoria">Uma categoria</param>
+        /// <returns>Uma categoria criada</returns>
         [HttpPost]
         public IActionResult Post([FromForm] Guid id, Categoria categoria)
         {
@@ -45,6 +60,12 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // PUT api/<CategoriaController>/5
+        /// <summary>
+        /// Edita uma categoria ja existente
+        /// </summary>
+        /// <param name="id">id da categoria</param>
+        /// <param name="categoria">Uma entidade categoria</param>
+        /// <returns>Uma categoria editada</returns>
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Categoria categoria)
         {
@@ -56,6 +77,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // DELETE api/<CategoriaController>/5
+        /// <summary>
+        /// Apaga uma categoria
+        /// </summary>
+        /// <param name="id">id da categoria</param>
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

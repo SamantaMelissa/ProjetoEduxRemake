@@ -23,6 +23,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET: api/<DicaController>
+        /// <summary>
+        /// Mostra todas as Dicas existentes
+        /// </summary>
+        /// <returns>Retorna uma lista de dicas</returns>
         [HttpGet]
         public List<Dica> Get()
         {
@@ -30,6 +34,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET api/<DicaController>/5
+        /// <summary>
+        /// Mostra um dicas especificada pelo Id
+        /// </summary>
+        /// <param name="id">Id de uma dica</param>
+        /// <returns>Retorna uma dica especifica</returns>
         [HttpGet("{id}")]
         public Dica Get(Guid id)
         {
@@ -37,6 +46,12 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // POST api/<DicaController>
+        /// <summary>
+        /// Adiciona uma nova dica
+        /// </summary>
+        /// <param name="id">Id de uma dica</param>
+        /// <param name="dica">Uma dica</param>
+        /// <returns>O a dic0 cadastradaa</returns>
         [HttpPost]
         public IActionResult Post([FromForm] Guid id, Dica dica)
         {
@@ -68,6 +83,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // PUT api/<DicaController>/5
+        /// <summary>
+        /// Edita uma dica existente
+        /// </summary>
+        /// <param name="id">Id de uma dica</param>
+        /// <param name="dica">Uma dica</param>
         [HttpPut("{id}")]
         public void Put(Guid id, Dica dica)
         {
@@ -76,6 +96,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // DELETE api/<DicaController>/5
+        /// <summary>
+        /// Remove uma deica existente
+        /// </summary>
+        /// <param name="id">Id de uma dica</param>
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

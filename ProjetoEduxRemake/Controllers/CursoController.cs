@@ -22,6 +22,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET: api/<CursoController>
+        /// <summary>
+        /// Mostra todos os cursos existentes
+        /// </summary>
+        /// <returns>Retorna uma lista de cursos</returns>
         [HttpGet]
         public List<Curso> Get()
         {
@@ -29,6 +33,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET api/<CursoController>/5
+        /// <summary>
+        /// Mostra um curso especificado pelo seu id
+        /// </summary>
+        /// <param name="id">Recebe o id do curso</param>
+        /// <returns>Retorna um curso especifico</returns>
         [HttpGet("{id}")]
         public Curso Get(Guid id)
         {
@@ -36,6 +45,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // POST api/<CursoAlunoController>
+        /// <summary>
+        /// Adiciona um novo curso
+        /// </summary>
+        /// <param name="id">Recebe o id do curso</param>
+        /// <param name="curso">Entidade curso</param>
         [HttpPost]
         public void Post([FromForm] Guid id, Curso curso)
         {
@@ -43,6 +57,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // PUT api/<CursoController>/5
+        /// <summary>
+        /// Edita um curso já existente
+        /// </summary>
+        /// <param name="id">Recebe o id do curso</param>
+        /// <param name="curso">Entidade curso</param>
         [HttpPut("{id}")]
         public void Put(Guid id, Curso curso)
         {
@@ -51,6 +70,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // DELETE api/<CursoController>/5
+        /// <summary>
+        /// Apaga um curso existente
+        /// </summary>
+        /// <param name="id">Recebe o id do curso</param>
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

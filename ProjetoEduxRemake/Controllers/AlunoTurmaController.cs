@@ -22,6 +22,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET: api/<AlunoTurmaController>
+        /// <summary>
+        /// Mostra todas as turmas que o aluno está cadastrado
+        /// </summary>
+        /// <returns>Lista de Matricula</returns>
         [HttpGet]
         public List<AlunoTurma> Get()
         {
@@ -29,6 +33,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // GET api/<AlunoTurmaController>/5
+        /// <summary>
+        /// Mostra a turma em que o aluno especificado pelo Id está cadastrado
+        /// </summary>
+        /// <param name="id">id da Matrícula</param>
+        /// <returns>Lista de Matricula de um aluno específico</returns>
         [HttpGet("{id}")]
         public AlunoTurma Get(Guid id)
         {
@@ -36,6 +45,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // POST api/<AlunoTurmaController>
+        /// <summary>
+        /// Adiciona uma nova Matricula
+        /// </summary>
+        /// <param name="id">Id da Matrículaparam>
+        /// <param name="alunoTurma">Entidade AlunoTurma</param>
         [HttpPost]
         public void Post([FromForm] Guid id, AlunoTurma alunoTurma)
         {
@@ -43,6 +57,11 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // PUT api/<AlunoTurmaController>/5
+        /// <summary>
+        /// Edita elementos da matricula
+        /// </summary>
+        /// <param name="id">Id de AlunoTurma</param>
+        /// <param name="alunoTurma">Entidade AlunoTurma</param>
         [HttpPut("{id}")]
         public void Put(Guid id, AlunoTurma alunoTurma)
         {
@@ -51,6 +70,10 @@ namespace ProjetoEduxRemake.Controllers
         }
 
         // DELETE api/<AlunoTurmaController>/5
+        /// <summary>
+        /// Apaga uma Matrícula
+        /// </summary>
+        /// <param name="id">Id AlunoTurma</param>
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {

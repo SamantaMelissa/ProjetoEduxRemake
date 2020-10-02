@@ -18,9 +18,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Cadastra um novo usuario
+        /// Cadastra uma nova curtida
         /// </summary>
-        /// <param name="usuario">Objeto a ser cadastrado</param>
+        /// <param name="curtida">Objeto a ser cadastrado</param>
         public void Adicionar(Curtida curtida)
         {
             try
@@ -38,10 +38,10 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Busca um usuario pelo id
+        /// Busca uma curtida pelo id
         /// </summary>
-        /// <param name="id">Id de usuario</param>
-        /// <returns>O usuario procurado</returns>
+        /// <param name="id">Id de curtida</param>
+        /// <returns>A curtida procurado</returns>
         public Curtida BuscarPorId(Guid id)
         {
             try
@@ -55,9 +55,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Altera um usuario
+        /// Altera umA curtida
         /// </summary>
-        /// <param name="usuario">Objeto a ser alterado</param>
+        /// <param name="curtida">Objeto a ser alterado</param>
         public void Editar(Curtida curtida)
         {
             try
@@ -80,9 +80,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Mostra todos os usuarios cadastrados
+        /// Mostra todas as curtidas cadastrados
         /// </summary>
-        /// <returns>Uma lista de usuarios</returns>
+        /// <returns>Uma lista de curtidas</returns>
         public List<Curtida> Listar()
         {
             try
@@ -98,9 +98,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Remove um usuario
+        /// Remove uma curtida
         /// </summary>
-        /// <param name="id">Objeto de usuario</param>
+        /// <param name="id">Objeto de curtida</param>
         public void Remover(Guid id)
         {
             try

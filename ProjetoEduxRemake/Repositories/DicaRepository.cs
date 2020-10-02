@@ -18,9 +18,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Cadastra um novo usuario
+        /// Cadastra uma nova dica
         /// </summary>
-        /// <param name="usuario">Objeto a ser cadastrado</param>
+        /// <param name="dica">Objeto a ser cadastrado</param>
         public void Adicionar(Dica dica)
         {
             try
@@ -38,10 +38,10 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Busca um usuario pelo id
+        /// Busca uma dica pelo id
         /// </summary>
-        /// <param name="id">Id de usuario</param>
-        /// <returns>O usuario procurado</returns>
+        /// <param name="id">Id de dica</param>
+        /// <returns>A dica procurado</returns>
         public Dica BuscarPorId(Guid id)
         {
             try
@@ -55,9 +55,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Altera um usuario
+        /// Altera uma dica
         /// </summary>
-        /// <param name="usuario">Objeto a ser alterado</param>
+        /// <param name="dica">Objeto a ser alterado</param>
         public void Editar(Dica dica)
         {
             try
@@ -82,9 +82,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Mostra todos os usuarios cadastrados
+        /// Mostra todos as dica cadastradas
         /// </summary>
-        /// <returns>Uma lista de usuarios</returns>
+        /// <returns>Uma lista de dicas</returns>
         public List<Dica> Listar()
         {
             try
@@ -100,9 +100,9 @@ namespace ProjetoEduxRemake.Repositories
         }
 
         /// <summary>
-        /// Remove um usuario
+        /// Remove uma dica
         /// </summary>
-        /// <param name="id">Objeto de usuario</param>
+        /// <param name="id">Objeto de dica</param>
         public void Remover(Guid id)
         {
             try
