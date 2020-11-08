@@ -27,7 +27,7 @@ namespace ProjetoEduxRemake.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-9K8CGCB\SQLEXPRESS;Initial Catalog=NewProjetoEduxRemake;Persist Security Info=True;User ID=sa;Password=sa132");
+                optionsBuilder.UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=NewProjetoEduxRemake;Persist Security Info=True;User ID=sa;Password=sa132");
             base.OnConfiguring(optionsBuilder);
         }
 

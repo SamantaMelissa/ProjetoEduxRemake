@@ -55,7 +55,7 @@ namespace ProjetoEduxRemake.Controllers
         /// <param name="usuario">Objeto usuário</param>
         /// <returns>Retorna um usário cadastrado</returns>
         [HttpPost]
-        public IActionResult Post([FromForm] Guid id, Usuario usuario)
+        public IActionResult Post(Usuario usuario)
         {
             usuario.Senha = Crypto.Criptografar(usuario.Senha, usuario.Email.Substring(0, 4));
             try

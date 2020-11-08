@@ -252,7 +252,19 @@ namespace ProjetoEduxRemake
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                 };
             });
+
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                                        .AllowAnyMethod()
+                                        .AllowAnyHeader());
+
+            });
         }
+
+        
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -262,13 +274,13 @@ namespace ProjetoEduxRemake
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthentication();
 
             app.UseAuthorization();
+
+
 
             app.UseStaticFiles();
 
@@ -282,6 +294,8 @@ namespace ProjetoEduxRemake
             });
 
             app.UseSwagger();
+
+            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {

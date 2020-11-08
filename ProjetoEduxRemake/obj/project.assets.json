@@ -5935,25 +5935,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\parra\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\cliente\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\parra\\OneDrive\\Documentos\\ProjetoSenai\\ProjetoEduxRemake\\ProjetoEduxRemake\\ProjetoEduxRemake.csproj",
+      "projectUniqueName": "C:\\Users\\cliente\\Desktop\\Senai\\Sprint3\\ProjetoEduxRemake\\ProjetoEduxRemake\\ProjetoEduxRemake.csproj",
       "projectName": "ProjetoEduxRemake",
-      "projectPath": "C:\\Users\\parra\\OneDrive\\Documentos\\ProjetoSenai\\ProjetoEduxRemake\\ProjetoEduxRemake\\ProjetoEduxRemake.csproj",
-      "packagesPath": "C:\\Users\\parra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\parra\\OneDrive\\Documentos\\ProjetoSenai\\ProjetoEduxRemake\\ProjetoEduxRemake\\obj\\",
+      "projectPath": "C:\\Users\\cliente\\Desktop\\Senai\\Sprint3\\ProjetoEduxRemake\\ProjetoEduxRemake\\ProjetoEduxRemake.csproj",
+      "packagesPath": "C:\\Users\\cliente\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cliente\\Desktop\\Senai\\Sprint3\\ProjetoEduxRemake\\ProjetoEduxRemake\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\parra\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\cliente\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6023,7 +6018,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
